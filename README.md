@@ -1,2 +1,2 @@
 https://OksanaBebesh.github.io/rsschool-cv/cv
-https://OksanaBebesh.github.io/rsschool-cv-html/
+https://OksanaBebesh.github.io/rsschool-cv/
