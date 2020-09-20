@@ -15,10 +15,10 @@ I have next kind of **diploma**:
 2. Diploma of Higher Education  - Yanka Kupala State University of Grodno  with the assignment of software engineer in 2010.
 3. Retraining diploma at the level of higher education with the assignment of ***teacher qualifications*** in 2016**
 
-In 2009 I start study in Cisco® Networking Academy. I have next diploma:
-CCNA 1 Networking Basics
-CCNA 2 Router and Routing Basics
-CCNA 3 Switching Basics and Intermediate Routing
+*In 2009 I start study in Cisco® Networking Academy. I have next diploma:
+1. CCNA 1 Networking Basics
+1. CCNA 2 Router and Routing Basics
+1. CCNA 3 Switching Basics and Intermediate Routing
 
 ##My expirience to work##
 I have next **expirience to work:**
