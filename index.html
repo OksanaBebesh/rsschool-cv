@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main-block">
+        
+           
+            <table class="main"><section class="contacts"></section>
+                <tr><td> <img src="./img/photo.jpg" alt="Foto Oksana Bebesh" width="100px" style="margin-left: 10px;"></td><td><h2>Oksana Bebesh</h2></td></tr>
+                <tr><td><img src="./img/phone.png" alt="phone" width="20px" class='logo_img'></td><td>+375295828220</td></tr>
+                <tr> <td><img src="./img/email.png" alt="email" width="20px" class='logo_img'></td><td>oksana_bebesh1984@bk.ru</td></tr></section>
+                <TR><td class="name-cols">SUMMARY</td><td><p class="p-content"> I am 36 years old, and I have some expirience to work teacher in colledge (near 10 years). This work give me a lot of knowledge about data base, computer system, computer network system, psyhology. I taught next subjects: basics of computer system, computer network, data base. I had to find the material for lessons by myself. I am dreaming to work in IT company. I like to make code, to learn more and more new subjects.
+                    But I have a dream, to find work in IT. The time is come. I was lucky when I finded work in IT Company (Velox Imaging). I liked my new work very much. I make tasks for migration data from one data base to another. In march 2020 our branch was cut. Migration data it is a narrow specialization, and it was hard to find new work. I start to study. I don’t like to sit around. I like to make someting interesting for my and my family. I am creative person.
+                    
+                    This summer I learn Laravel(Web Developer Blog), I learn JavaScript (in the past i don’t now JS perfect). For studing JS I use courses “JS Advansed” in https://itvdn.com/ru. I start learning english more.</p></td></TR>
+                <tr><TD class="name-cols">CAREER</TD><td>
+                    <pre>
+<p class="p-content">2005 - june 2019 Vocational college of Grodno (now College of Engineering Technology and Design) in 2005 In position industrial training master in 2008 in position teacher; in 2010 - 2013 maternity leave - first child at 2013 - 2015 in position teacher; 2015-2018 maternity leave -> second child;
+
+jule 2019 - march 2020 Velox Imaging - Branch Migration. I create procedures, sql queries. My task was to made perfect data placement. For example some SQL queries:
+</p>
+<code>
+// This SQL query show information about files, which is not added to table file linksd 
+SELECT id_files, study_description, modality, id_referrer
+FROM file_tags ft LEFT JOIN link_file lf on ft.id_files = lf.id_files
+WHERE lf.id_files is null;
+
+// SQL Query For finding duplicate text reports 
+SELECT d.ID_Encounter
+FROM qxu.documentdata dd
+  JOIN  qxu.documentprocedure dp ON dd.ID_DocumentData=dp.ID_DocumentData
+GROUP BY dp.ID_Procedure,dd.TextData
+  HAVING COUNT(*)>1;
+
+//SQL Query For finding errors with helth cards, when cards have two patients
+  SELECT DISTINCT  t.PHN,t.PatientLastName,t.PatientFirstName,t.Birthdate  
+    FROM tmp_migr.tblpatient t
+     JOIN
+    (SELECT  DISTINCT p.PHN AS pphn,p.PatientLastName AS pLN,p.PatientFirstName AS pFN,p.Birthdate AS pBRTH
+    FROM tmp_migr.tblpatient p 
+    ) as rrr 
+   ON t.PHN=rrr.pphn AND  t.PatientLastName!=rrr.pLN AND t.Birthdate!=rrr.pFN and  t.Birthdate!=rrr.pBRTH;
+</code> 
+                    </pre>
+                </td></tr>
+                <tr><td class="name-cols">
+                    EDUCATION
+                </td>
+                <td> <p class="p-content"></p>
+                    secondary special education diploma - Vocational college of Grodno (now College of Engineering Technology and Design) with the assignment of software technician in 2005**
+                    Diploma of Higher Education - Yanka Kupala State University of Grodno with the assignment of software engineer in 2010.
+                    Retraining diploma at the level of higher education with the assignment of teacher qualifications in 2016**
+                    In 2009 I start study in Cisco® Networking Academy. I have next diploma: CCNA 1 Networking Basics CCNA 2 Router and Routing Basics CCNA 3 Switching Basics and Intermediate Routing </td></p>
+                </td>
+            </tr>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
