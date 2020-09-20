@@ -2,6 +2,14 @@
 **Contacts:** GSM +375 29 582 82 20; **oksana_bebesh1984.bk.ru**
 
 ##About myself##
+I like studying
+I don't like to sit around
+I can learn subjects by myself, using books,  youtube channel
+
+I know 
+CSS, HTML, php, JavaScript, MYSQL(SQL), Laravel
+
+
 I am 36 years old, and I have some expirience to work teacher in colledge (near 10 years). This work give me a lot of knowledge about data base, computer system, computer network system, psyhology. I taught next subjects: basics of computer system, computer network, data base. I had to find the material for lessons by myself. I like to make code, to learn more and more new subjects.  
 But I have a dream, to find work in IT. The time is come. I was lucky when I finded work in IT Company (Velox Imaging). I liked my new work very much. I make tasks for migration data from one data base to another. 
 In march 2020 our branch was cut. 
