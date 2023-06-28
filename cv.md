@@ -3,11 +3,11 @@
 ## English B1
 ## Russian native
 
-*linkedin:* <a href="https://www.linkedin.com/in/oksana-bebesh1984/"></a>
+*linkedin:* <a href="https://www.linkedin.com/in/oksana-bebesh1984/">https://www.linkedin.com/in/oksana-bebesh1984/</a><br>
 *telegram:* @oksanabebesh <br>
-*skype:* live:kseniia_25
-*mail:* <a href="mailto:oksana.bebesh1984@gmail.com">oksana.bebesh1984@gmail.com </a>
-*phone:* +48 78 0003 744
+*skype:* live:kseniia_25<br>
+*mail:* <a href="mailto:oksana.bebesh1984@gmail.com"></a><br>
+*phone:* +48 78 0003 744<br>
 *oksana.bebesh1984@gmail.com*<br>
 
 ##### Brief Profile #####
