@@ -1,11 +1,14 @@
 # Aksana Bebesh Poland (Lodz) <br/>
 
 <hr />
+
 ## Fullstack Software developer (PHP, JS, MySQL, Postgres, React)<br />
-<hr>
-## Languages
-### English B1
-### Russian native
+
+<hr />
+
+## Languages <br/>
+### English B1 <br/>
+### Russian native <br/>
 
 *linkedin:* <a href="https://www.linkedin.com/in/oksana-bebesh1984/">https://www.linkedin.com/in/oksana-bebesh1984/</a><br>
 *telegram:* @oksanabebesh <br>
@@ -14,11 +17,13 @@
 *phone:* +48 78 0003 744<br>
 
 <hr />
+
 ## Brief Profile
 <p>Full stack developer with 2.5 years of experience in building web applications based on web technologies: PHP(Symfony, Laravel), CMS (WordPress), MySQL(procedures, triggers), PostgreSQL,
 AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with Docker (docker compose), Git (Github), Jira.</p>
 
 <hr />
+
 ## Examples of code  
 ```JavaScript
 StorageModule.groupStatesUpdate = () => {  
@@ -50,6 +55,7 @@ StorageModule.groupStatesUpdate = () => {
     ) as rrr 
    ON t.PHN=rrr.pphn AND  t.PatientLastName!=rrr.pLN AND t.Birthdate!=rrr.pFN and  t.Birthdate!=rrr.pBRTH;
 </code></pre>
+
 <hr />
 
 ## Courses
