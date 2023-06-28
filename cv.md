@@ -1,23 +1,25 @@
 # Aksana Bebesh Poland (Lodz) <br/>
+
+<hr>
 ## Fullstack Software developer (PHP, JS, MySQL, Postgres, React)<br />
-## English B1
-## Russian native
+<hr>
+## Languages
+### English B1
+### Russian native
 
 *linkedin:* <a href="https://www.linkedin.com/in/oksana-bebesh1984/">https://www.linkedin.com/in/oksana-bebesh1984/</a><br>
 *telegram:* @oksanabebesh <br>
 *skype:* live:kseniia_25<br>
-*mail:* <a href="mailto:oksana.bebesh1984@gmail.com"></a><br>
+*mail:* <a href="mailto:oksana.bebesh1984@gmail.com">oksana.bebesh1984@gmail.com</a><br>
 *phone:* +48 78 0003 744<br>
-*oksana.bebesh1984@gmail.com*<br>
 
-##### Brief Profile #####
-<p>Full stack developer with 2.5 years of experience in building web
-applications based on web technologies: PHP(Symfony, Laravel),
-CMS (WordPress), MySQL(procedures, triggers), PostgreSQL,
-AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with
-Docker (docker compose), Git (Github), Jira.</p>
+<hr>
+## Brief Profile
+<p>Full stack developer with 2.5 years of experience in building web applications based on web technologies: PHP(Symfony, Laravel), CMS (WordPress), MySQL(procedures, triggers), PostgreSQL,
+AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with Docker (docker compose), Git (Github), Jira.</p>
 
-examples of code 
+<hr>
+## Examples of code  
 ```JavaScript
 StorageModule.groupStatesUpdate = () => {  
     const data = StorageModule.getData();
@@ -49,3 +51,10 @@ StorageModule.groupStatesUpdate = () => {
    ON t.PHN=rrr.pphn AND  t.PatientLastName!=rrr.pLN AND t.Birthdate!=rrr.pFN and  t.Birthdate!=rrr.pBRTH;
 </code></pre>
 <hr />
+
+<hr>
+## Courses
+In 2009 I studied in Cisco® Networking Academy. I have got next diploma:
+•CCNA 1 Networking Basics
+•CCNA 2 Router and Routing Basics
+•CCNA 3 Switching Basics and Intermediate Routing
