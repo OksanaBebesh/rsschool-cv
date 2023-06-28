@@ -1,15 +1,12 @@
-# Aksana Bebesh Poland (Lodz) <br/>
+# Aksana Bebesh
+
+**Fullstack Software developer (PHP, JS, MySQL, Postgres, React)**
 
 <hr />
 
-## Fullstack Software developer (PHP, JS, MySQL, Postgres, React)<br />
+## Contacts:
 
-<hr />
-
-## Languages <br/>
-### English B1 <br/>
-### Russian native <br/>
-
+ Poland (Lodz) <br>
 *linkedin:* <a href="https://www.linkedin.com/in/oksana-bebesh1984/">https://www.linkedin.com/in/oksana-bebesh1984/</a><br>
 *telegram:* @oksanabebesh <br>
 *skype:* live:kseniia_25<br>
@@ -21,6 +18,23 @@
 ## Brief Profile
 <p>Full stack developer with 2.5 years of experience in building web applications based on web technologies: PHP(Symfony, Laravel), CMS (WordPress), MySQL(procedures, triggers), PostgreSQL,
 AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with Docker (docker compose), Git (Github), Jira.</p>
+
+<hr />
+
+## Skills and Proficiency:
+
+
+1) PHP Advanced
+2) Symfony Intermediate
+3) MySQL Advanced
+4) JavaScript Advanced
+5) HTML Advanced
+6) CSS Advanced
+7) Git Advanced
+8) WordPress Advanced
+9) React Intermediate
+10) Node.js Basic
+11) AWS SQS Basic 
 
 <hr />
 
@@ -59,7 +73,14 @@ StorageModule.groupStatesUpdate = () => {
 <hr />
 
 ## Courses
-In 2009 I studied in Cisco® Networking Academy. I have got next diploma:
+In 2009 I studied in Cisco® Networking Academy. I have got next diploma: <br>
 •CCNA 1 Networking Basics <br>
 •CCNA 2 Router and Routing Basics <br>
 •CCNA 3 Switching Basics and Intermediate Routing <br>
+
+
+<hr />
+
+## Languages <br/>
+English B1 <br/>
+Russian native <br/>
