@@ -17,7 +17,7 @@ header {
   justify-content: flex-start;
 }
 
-contacts {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
