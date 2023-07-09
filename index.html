@@ -149,6 +149,7 @@
       </nav>
     </header>
     <main class="wrapper">
+
       <div class="skills-block">
         <div>
           <img class="photo" src="./images/photo-cv.jpg" width="90" alt="" >
@@ -168,6 +169,11 @@
             <li>React Intermediate</li>
             <li>Node.js Basic</li>
             <li>AWS SQS Basic</li>
+          </ul>
+          <h3>Languages</h3>
+          <ul>
+            <li>English B1 </li>
+            <li>Russian native </li>
           </ul>
         </div>
         <div class="swiper">
@@ -266,6 +272,11 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
+      <div class="profile">
+        <h3>Brief Profile</h3>
+<p>Full stack developer with 2.5 years of experience in building web applications based on web technologies: PHP(Symfony, Laravel), CMS (WordPress), MySQL(procedures, triggers), PostgreSQL,
+AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with Docker (docker compose), Git (Github), Jira.</p>
+      </div>
       <div class="experience-block">
         <h3>Project experience</h3>
         <div id="tabs">
@@ -322,6 +333,39 @@
 </pre>
           </div>
         </div>
+      </div>
+      <div class="code-examples">
+<h3>Examples of code</h3>
+<pre>
+  <b>JavaScript</b>
+StorageModule.groupStatesUpdate = () => {  
+    const data = StorageModule.getData();
+    const newdata = data
+                    .map(group => {
+                       group.states = []
+                       return group
+                    })
+                    .map(group =>{                          
+                          group.states = group.rows.map(row => row[1]);                          
+                          return group;
+                    })
+                    .map(group =>{
+                          group.stateAccept = ( group.states.includes('принят') ) ? 'Accept' : ''
+                          return group;
+                    });
+    StorageModule.setData(newdata);
+}
+</pre>
+<pre>
+  <b>SQL Query For finding errors with helth cards, when cards have two patients</b>
+  SELECT DISTINCT  t.PHN,t.PatientLastName,t.PatientFirstName,t.Birthdate  
+    FROM tmp_migr.tblpatient t
+     JOIN
+    (SELECT  DISTINCT p.PHN AS pphn,p.PatientLastName AS pLN,p.PatientFirstName AS pFN,p.Birthdate AS pBRTH
+    FROM tmp_migr.tblpatient p 
+    ) as rrr 
+   ON t.PHN=rrr.pphn AND  t.PatientLastName!=rrr.pLN AND t.Birthdate!=rrr.pFN and  t.Birthdate!=rrr.pBRTH;
+</pre>
       </div>
     </main>
     <footer class="wrapper">
