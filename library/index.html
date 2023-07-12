@@ -53,7 +53,7 @@
             and a cozy coffee shop inside
           </h3>
         </div>
-        <div class="gallery-about">
+        <div class="gallery-about slide-1">
           <img
             src="./images/image 1.png"
             alt="gallery-library"
@@ -73,7 +73,47 @@
             height="560"
           />
         </div>
-        <div class="pagination">
+        <div class="gallery-about slide-2">
+          <img
+            src="./images/image 1.png"
+            alt="gallery-library"
+            width="450"
+            height="560"
+          />
+          <img
+            src="./images/image 2.png"
+            alt="gallery-library"
+            width="450"
+            height="560"
+          />
+          <img
+            src="./images/image 3.png"
+            alt="gallery-library"
+            width="450"
+            height="560"
+          />
+        </div>
+        <div class="gallery-about slide-3">
+          <img
+            src="./images/image 1.png"
+            alt="gallery-library"
+            width="450"
+            height="560"
+          />
+          <img
+            src="./images/image 2.png"
+            alt="gallery-library"
+            width="450"
+            height="560"
+          />
+          <img
+            src="./images/image 3.png"
+            alt="gallery-library"
+            width="450"
+            height="560"
+          />
+        </div>
+        <div class="pagination id=pagination">
           <span class="item active">&#8226;</span>
           <span class="item">&#8226;</span>
           <span class="item">&#8226;</span>
@@ -272,23 +312,49 @@
         </div>
       </section>
       <section class="our-contacts" id="our-contacts">
-        <h2>Our Contacts</h2>
-        <div class="contact-items">
-          <h6>For all Library inquiries:</h6>
-          <p>Please call (617) 730-2370</p>
-          <p>For TTY service, please call (617) 730-2370</p>
-          <p>Putterham Library: (617) 730-2385</p>
-          <h6>Senior Staff</h6>
-          <p>Library Director: <b>Amanda Hirst</b></p>
+        <div class="line-description">
+          <h2>Our Contacts</h2>
+          <span class="separator"></span>
         </div>
-        <div class="map-contact"></div>
+        <div class="container">
+          <div class="contact-items">
+            <h6>For all Library inquiries:</h6>
+            <p>Please call (617) 730-2370</p>
+            <p>For TTY service, please call (617) 730-2370</p>
+            <p>Putterham Library: (617) 730-2385</p>
+            <h6>Senior Staff</h6>
+            <p>Library Director: <b>Amanda Hirst</b></p>
+          </div>
+          <div class="map-contact">
+            <!--The div element for the map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0159803911974!2d-73.99616850959366!3d40.695645697643286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a49b649b8c3%3A0x6342a2291cea2e!2zMjg2IENhZG1hbiBQbGF6YSBXLCBCcm9va2x5biwgTlkgMTEyMDEsINCh0KjQkA!5e0!3m2!1sru!2spl!4v1689154979358!5m2!1sru!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </section>
       <section class="digital-cards" id="digital-cards">
         <div class="card-find-form">
           <form class="find-form">
-            <p></p>
-            <input class="reader-name" type="text" />
-            <input class="card-number" type="text" />
+            <div class="form-container">
+              <p>Brooklyn Public Library</p>
+              <input
+                class="reader-name"
+                type="text"
+                placeholder="Reader's name "
+              />
+              <input
+                class="card-number"
+                type="text"
+                placeholder="Card number"
+              />
+            </div>
             <button>Check the card</button>
           </form>
         </div>
