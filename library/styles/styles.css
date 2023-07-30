@@ -12,16 +12,16 @@ body {
 
 .wrapper {
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-self: baseline;
-  padding: 20px;
+  padding: 11px;
   background-color: #0c0c0e;
   min-height: 90px;
-  /* width: 100%; */
   color: #ffffff;
 }
 
@@ -33,8 +33,9 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 400;
+  letter-spacing: 0.6px;
 }
 
 footer {
@@ -51,6 +52,7 @@ header h3 {
 
 .hidden {
   opacity: 0;
+  display: none;
 }
 
 nav ul > li {
@@ -60,6 +62,7 @@ nav ul > li {
   flex-direction: row;
   margin-right: 30px;
   align-self: center;
+  font-size: 21px;
 }
 
 nav ul {
@@ -90,12 +93,12 @@ nav ul > li > a:hover {
 
 .hero {
   width: 100%;
-  min-height: 700px;
+  min-height: 600px;
   background-image: url("../images/Welcome.png");
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100%;
-  margin-top: -33px;
+  margin-top: -23px;
 }
 
 .hero h1 {
@@ -115,15 +118,25 @@ nav ul > li > a:hover {
   text-align: center;
 }
 
+.about .line-description h2 {
+  margin-block-start: 0.53em;
+}
+
 .line-description {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.line-description h3 {
+  margin-block-start: 2.5em;
+  font-size: 19px;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
+  margin-top: 3px;
 }
 
 section {
@@ -136,7 +149,7 @@ section {
 }
 
 .gallery-about img {
-  margin-right: 25px;
+  padding: 11px;
 }
 
 .gallery-about.slide-3,
@@ -149,15 +162,33 @@ section {
   width: 50px;
   height: 1px;
   background: #0c0c0e;
-  margin-top: -10px;
+  margin-top: -16px;
 }
 
 .item {
-  width: 68px;
-  height: 16px;
+  width: 27px;
+  height: 27px;
   color: #0c0c0e;
-  font-size: 30px;
+  font-size: 48px;
   cursor: pointer;
+}
+
+.favorites .line-description h2 {
+  margin-block-start: 1.83em;
+}
+
+.favorites .seasons-header {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-block-start: 2em;
+}
+
+.favorites {
+  width: 96%;
+  /* margin: 0 auto; */
 }
 
 .active {
@@ -168,7 +199,8 @@ section {
   display: inline-flex;
   list-style-type: none;
   justify-content: flex-start;
-  margin-left: 37px;
+  margin-block-start: 1em;
+  padding-inline-start: 18px;
 }
 
 .seasons li {
@@ -184,6 +216,13 @@ section {
   cursor: pointer;
 }
 
+.seasons input[type="radio"] {
+  border: 1px solid #0000;
+  width: 17px;
+  height: 17px;
+  margin: 8px 6px -9px 3px;
+}
+
 .seasons input[type="radio"]:checked + label {
   font-weight: bold;
 }
@@ -191,7 +230,6 @@ section {
 .favorites-books-block {
   display: flex;
   justify-content: space-between;
-  width: 86%;
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -203,8 +241,16 @@ section {
   max-height: 550px;
   position: relative;
   border: 1px solid #000;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   padding-left: 20px;
+}
+
+.book-block button {
+  padding: 7px 25px;
+  position: absolute;
+  bottom: 7px;
+  left: 38px;
 }
 
 .book-description {
@@ -239,12 +285,26 @@ section {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
+  /* margin-block-start: 1em;
+  margin-block-end: 1.1em; */
+}
+
+.desserts-block {
+  text-align: right;
 }
 
 .menu-item > .separator {
   width: 100px;
   height: 1px;
   background: #bb945f;
+}
+
+div.menu-item {
+  width: 250px;
+}
+
+.desserts-block > div.menu-item {
+  text-align: right;
 }
 
 .coffe-shop p {
@@ -254,13 +314,26 @@ section {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 20px;
   letter-spacing: 2px;
 }
 
+.coffee-description {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-block-start: 2em;
+}
+
 .coffee-shop {
-  width: 80%;
-  margin: 0 auto;
+  width: 97%;
+  margin: 10px auto;
 }
 
 .menu {
@@ -278,8 +351,10 @@ section {
   line-height: 40px;
   letter-spacing: 2px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: baseline;
 }
 
 #map {
@@ -292,32 +367,76 @@ section {
   flex-direction: column;
 }
 
+.contact-items h6 {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-block-start: 0.33em;
+}
+
 .our-contacts {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 .our-contacts .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
 }
 
 .our-contacts .line-description {
   margin-bottom: 40px;
 }
 
-.digital-cards {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
+.our-contacts .line-description h2 {
+  margin-block-start: 0em;
+}
+
+.card-find-form {
+  padding: 21px;
+}
+
+.form-container p {
+  color: #000;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
 }
 
 .digital-cards {
-  margin-bottom: 41px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* width: 80%; */
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+
+.digital-cards .line-descrition {
+  display: flex;
+  justify-content: center;
+}
+
+.digital-cards .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .find-form {
@@ -375,16 +494,28 @@ section {
   letter-spacing: 0.4px;
 }
 
+.register-card-block {
+  text-align: right;
+}
+
 footer .separator {
   width: 100%;
   height: 1px;
   background: #fff;
-  margin: 46px 0 46px;
+  margin: 14px 0 46px;
 }
 
 .footer-social-nav li {
   margin-right: 15px;
   cursor: pointer;
+}
+
+.social-block {
+  line-height: 10px;
+}
+
+.work-time {
+  line-height: 0px;
 }
 
 .footer-social-nav {
