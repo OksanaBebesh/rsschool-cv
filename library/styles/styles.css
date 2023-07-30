@@ -72,6 +72,10 @@ nav ul > li > a {
   color: #ffffff;
 }
 
+nav ul > li > a:hover {
+  color: #c38154;
+}
+
 .hero {
   width: 100%;
   min-height: 700px;
@@ -168,7 +172,7 @@ section {
   cursor: pointer;
 }
 
-.seasons input[type="radio"]:checked + span {
+.seasons input[type="radio"]:checked + label {
   font-weight: bold;
 }
 
@@ -376,6 +380,24 @@ footer .separator {
   padding-inline-start: 0;
 }
 
+.social-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.facebook {
+  background-image: url("../images/u_facebook-f.png");
+  color: red;
+}
+
+.instagram {
+  background-image: url("../images/u_instagram.png");
+}
+
+.twitter {
+  background-image: url("../images/u_twitter-alt.png");
+}
+
 .adress {
   display: flex;
   justify-content: space-between;
@@ -384,6 +406,11 @@ footer .separator {
 .href-line {
   display: flex;
   justify-content: space-between;
+}
+
+.href-line a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer-social-nav {

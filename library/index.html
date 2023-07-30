@@ -16,6 +16,24 @@
       href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
     <title>Document</title>
   </head>
   <body>
@@ -41,7 +59,7 @@
           </ul>
         </nav>
       </header>
-      <section class="hero">
+      <section class="hero welcome">
         <h1 class="hidden">Welcome to the Brooklyn Library</h1>
       </section>
       <section class="about" id="about">
@@ -132,7 +150,7 @@
               type="radio"
               name="seasons"
               value="Winter"
-            /><span>Winter</span>
+            /><label for="Winter">Winter</label>
           </li>
           <li>
             <input
@@ -140,7 +158,7 @@
               type="radio"
               name="seasons"
               value="Spring"
-            /><span>Spring</span>
+            /><label for="Spring">Spring</label>
           </li>
           <li>
             <input
@@ -148,7 +166,7 @@
               type="radio"
               name="seasons"
               value="Summer"
-            /><span>Summer</span>
+            /><label for="Summer">Summer</label>
           </li>
           <li>
             <input
@@ -156,7 +174,7 @@
               type="radio"
               name="seasons"
               value="Autumn"
-            /><span>Autumn</span>
+            /><label for="Autumn">Autumn</label>
           </li>
         </ul>
         <div class="favorites-books-block">
@@ -381,6 +399,24 @@
               <li>
                 <img src="./images/u_twitter-alt.png" alt="social-logo" />
               </li>
+              <li>
+                <div
+                  src="./images/u_facebook-f.png"
+                  class="social-logo facebook"
+                />
+              </li>
+              <li>
+                <div
+                  src="./images/u_instagram.png"
+                  class="social-logo instagram"
+                />
+              </li>
+              <li>
+                <div
+                  src="./images/u_twitter-alt.png"
+                  class="social-logo twitter"
+                />
+              </li>
             </ul>
           </div>
           <div class="work-time">
@@ -393,8 +429,14 @@
         <div class="separator"></div>
         <div class="href-line">
           <span>2023</span>
-          <span>The Rolling Scopes School</span>
-          <span>OksanaBebesh</span>
+          <span
+            ><a href="https://rs.school/js-stage0/"
+              >The Rolling Scopes School</a
+            ></span
+          >
+          <span
+            ><a href="https://github.com/OksanaBebesh">OksanaBebesh</a></span
+          >
         </div>
       </footer>
     </div>
