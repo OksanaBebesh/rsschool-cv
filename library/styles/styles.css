@@ -76,6 +76,18 @@ nav ul > li > a:hover {
   color: #c38154;
 }
 
+.profile-icon {
+  width: 31px;
+  height: 31px;
+  background-image: url("../images/icon_profile.png");
+  background-repeat: no-repeat;
+}
+
+.profile-icon:hover {
+  background-image: url("../images/icon_profile_hover.png");
+  background-repeat: no-repeat;
+}
+
 .hero {
   width: 100%;
   min-height: 700px;
@@ -396,6 +408,19 @@ footer .separator {
 
 .twitter {
   background-image: url("../images/u_twitter-alt.png");
+}
+
+.facebook:hover {
+  background-image: url("../images/u_facebook-f_hover.png");
+  color: red;
+}
+
+.instagram:hover {
+  background-image: url("../images/u_instagram_hover.png");
+}
+
+.twitter:hover {
+  background-image: url("../images/u_twitter-alt_hover.png");
 }
 
 .adress {
