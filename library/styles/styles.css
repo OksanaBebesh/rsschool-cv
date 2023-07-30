@@ -1,0 +1,419 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-width: 1440px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-self: baseline;
+  padding: 20px;
+  background-color: #0c0c0e;
+  min-height: 90px;
+  /* width: 100%; */
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: Forum;
+  color: #0c0c0e;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+footer {
+  min-height: 250px;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #0c0c0e;
+}
+
+header h3 {
+  font-weight: 100;
+  background-color: #0c0c0e;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+nav ul > li {
+  display: inline-block;
+  align-items: baseline;
+  list-style-type: none;
+  flex-direction: row;
+  margin-right: 30px;
+  align-self: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ul > li > a:hover {
+  color: #c38154;
+}
+
+.hero {
+  width: 100%;
+  min-height: 700px;
+  background-image: url("../images/Welcome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  margin-top: -33px;
+}
+
+.hero h1 {
+  font-family: "Forum";
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.hero-welcome {
+  width: 600px;
+  height: 220px;
+  background-color: #0c0c0e;
+  justify-content: center;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.line-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin: 0;
+}
+
+.gallery-about {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-about img {
+  margin-right: 25px;
+}
+
+.gallery-about.slide-3,
+.gallery-about.slide-2 {
+  opacity: 0;
+  display: none;
+}
+
+.line-description .separator {
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+  margin-top: -10px;
+}
+
+.item {
+  width: 68px;
+  height: 16px;
+  color: #0c0c0e;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.active {
+  color: #bb945f;
+}
+
+.seasons {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  margin-left: 37px;
+}
+
+.seasons li {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 90px;
+  cursor: pointer;
+}
+
+.seasons input[type="radio" i] {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.seasons input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+.favorites-books-block {
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.book-block {
+  min-width: 550px;
+  min-height: 550px;
+  max-width: 550px;
+  max-height: 550px;
+  position: relative;
+  border: 1px solid #000;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.book-description {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  max-width: 355px;
+  min-width: 355px;
+}
+
+.book-photo {
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  right: -39px;
+}
+
+.menu-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desserts-block h2,
+.drinks-block h2 {
+  color: #bb945f;
+  font-family: "Forum";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.menu-item > .separator {
+  width: 100px;
+  height: 1px;
+  background: #bb945f;
+}
+
+.coffe-shop p {
+  color: #000;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.coffee-shop {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu {
+  list-style-type: none;
+  padding-inline-start: 0;
+  width: 438px;
+}
+
+.menu-item {
+  color: #000;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-contacts {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-contacts .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.our-contacts .line-description {
+  margin-bottom: 40px;
+}
+
+.digital-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.digital-cards {
+  margin-bottom: 41px;
+}
+
+.find-form {
+  border: 1px solid #bb945f;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  width: 560px;
+  height: 272px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #bb945f;
+  margin-bottom: 20px;
+}
+
+.form-container input[type="text"] {
+  width: 520px;
+  padding: 8px 8px 8px 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: #8e8e8e;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  margin-bottom: 25px;
+  border: 1px solid #bb945f;
+}
+
+.find-form button {
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  padding: 10px 40px;
+  width: 242px;
+  height: 44px;
+}
+
+.register-card-block p {
+  width: 456px;
+  height: 120px;
+  color: #000;
+  text-align: right;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+}
+
+footer .separator {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 46px 0 46px;
+}
+
+.footer-social-nav li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.footer-social-nav {
+  margin-right: 15px;
+  padding-inline-start: 0;
+}
+
+.social-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.facebook {
+  background-image: url("../images/u_facebook-f.png");
+  color: red;
+}
+
+.instagram {
+  background-image: url("../images/u_instagram.png");
+}
+
+.twitter {
+  background-image: url("../images/u_twitter-alt.png");
+}
+
+.adress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.href-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.href-line a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-social-nav {
+  display: flex;
+  list-style-type: none;
+}
