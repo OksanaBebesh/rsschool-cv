@@ -69,7 +69,8 @@ footer {
 
 .skills-block,
 .profile,
-.code-examples {
+.code-examples,
+.projects-block {
   display: flex;
   justify-content: center;
   width: 60%;
@@ -82,8 +83,28 @@ footer {
   flex-wrap: wrap;
 }
 
+.project-pet img {
+  width: 266px;
+}
+
 .profile {
   margin-top: 20px;
+}
+
+.projects-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-block > .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-pet {
+  margin: 5px;
+  padding: 5px;
 }
 
 .experience-block {

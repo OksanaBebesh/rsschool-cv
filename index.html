@@ -176,9 +176,7 @@
           </ul>
         </div>
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <img
                 src="./images/skills/html-5-svgrepo-com.svg"
@@ -362,14 +360,85 @@ StorageModule.groupStatesUpdate = () => {
         >
         <pre>
   <b>SQL Query For finding errors with helth cards, when cards have two patients</b>
-  SELECT DISTINCT  t.PHN,t.PatientLastName,t.PatientFirstName,t.Birthdate  
-    FROM tmp_migr.tblpatient t
+  SELECT DISTINCT 
+ t.Health_card,
+ t.PatientLastName,
+ t.PatientFirstName,
+ t.Birthdate  
+    FROM patient t
      JOIN
-    (SELECT  DISTINCT p.PHN AS pphn,p.PatientLastName AS pLN,p.PatientFirstName AS pFN,p.Birthdate AS pBRTH
-    FROM tmp_migr.tblpatient p 
-    ) as rrr 
-   ON t.PHN=rrr.pphn AND  t.PatientLastName!=rrr.pLN AND t.Birthdate!=rrr.pFN and  t.Birthdate!=rrr.pBRTH;
+         (SELECT  DISTINCT 
+          p.Health_card,
+          p.PatientLastName,
+          p.PatientFirstName,
+          p.Birthdate
+         FROM patient p 
+         ) as t2
+   ON 
+      t.Health_card = t2.Health_card  AND
+      t.PatientLastName != t2.PatientLastName AND
+      t.PatientFirstName != t2.PatientFirstName
+      t.Birthdate != t2.Birthdate;
+
 </pre>
+      </div>
+      <div class="projects-block">
+        <div><h3>Projects in Learning HTML Css</h3></div>
+        <div class="container">
+          <div class="project-pet">
+            <a
+              title="image-gallery"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/oksanabebesh-JSFEPRESCHOOL2023Q2/js-30-image-gallery/"
+            >
+              <img src="./images/img-projects/gallery.png" alt=""
+            /></a>
+          </div>
+          <div class="project-pet">
+            <a
+              title="memo-game"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/oksanabebesh-JSFEPRESCHOOL2023Q2/js30-memo-game/"
+            >
+              <img src="./images/img-projects/memo-game.png" alt=""
+            /></a>
+          </div>
+          <div class="project-pet">
+            <a
+              title="library"
+              target="_blank"
+              href="https://oksanabebesh.github.io/library2023/library/"
+              ><img src="./images/img-projects/library.png" alt=""
+            /></a>
+          </div>
+
+          <div class="project-pet">
+            <a
+              title="productly"
+              target="_blank"
+              href="https://oksanabebesh.github.io/LearningFridayLive/dist/"
+              ><img src="./images/img-projects/productly.png" alt=""
+            /></a>
+          </div>
+
+          <div class="project-pet">
+            <a
+              title="museum"
+              target="_blank"
+              href="https://oksanabebesh.github.io/css-projects-collections/JSFE2021Q3-museum/museum"
+              ><img src="./images/img-projects/museum.png" alt=""
+            /></a>
+          </div>
+
+          <div class="project-pet">
+            <a
+              title="museum"
+              target="_blank"
+              href="https://oksanabebesh.github.io/css-projects-collections/JSFE2021Q3-momentum/momentum/"
+              ><img src="./images/img-projects/momentum.png" alt=""
+            /></a>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="wrapper">
