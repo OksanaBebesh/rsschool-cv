@@ -6,7 +6,8 @@
     <title>CV Aksana Bebesh</title>
   </head>
   <body>
-    <header class="wrapper">
+    <a href="#top"><div class="top-href">&#x2191;</div></a>
+    <header class="wrapper" id="top">
       <h1 class="hidden">This is a Heading</h1>
       <nav>
         <div class="contact-item">
@@ -146,10 +147,19 @@
             />
           </a>
         </div>
+        <nav id="main-menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work experience</a></li>
+            <li><a href="#code-example">Code Example</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
       </nav>
     </header>
     <main class="wrapper">
-      <div class="skills-block">
+      <div class="skills-block" id="skills">
         <div>
           <img class="photo" src="./images/photo-cv.jpg" width="90" alt="" />
           <div><h2>Aksana Bebesh &#127799;</h2></div>
@@ -264,11 +274,11 @@
           </div>
           <div class="swiper-pagination"></div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
         </div>
       </div>
-      <div class="profile">
+      <div class="profile" id="about">
         <h3>Brief Profile</h3>
         <p>
           Full stack developer with 2.5 years of experience in building web
@@ -278,8 +288,8 @@
           Git (Github), Jira.
         </p>
       </div>
-      <div class="experience-block">
-        <h3>Project experience</h3>
+      <div class="experience-block" id="experience">
+        <h3>Work experience</h3>
         <div id="tabs">
           <div class="tab whiteborder">
             &#128137; Medical system for clinics
@@ -335,54 +345,60 @@
           </div>
         </div>
       </div>
-      <div class="code-examples">
+      <div class="code-examples" id="code-example">
         <h3>Examples of code</h3>
-        <pre>
-  <b>JavaScript</b>
-StorageModule.groupStatesUpdate = () => {  
-    const data = StorageModule.getData();
-    const newdata = data
-                    .map(group => {
-                       group.states = []
-                       return group
-                    })
-                    .map(group =>{                          
-                          group.states = group.rows.map(row => row[1]);                          
-                          return group;
-                    })
-                    .map(group =>{
-                          group.stateAccept = ( group.states.includes('принят') ) ? 'Accept' : ''
-                          return group;
-                    });
-    StorageModule.setData(newdata);
-}
-</pre
-        >
-        <pre>
-  <b>SQL Query For finding errors with helth cards, when cards have two patients</b>
-  SELECT DISTINCT 
- t.Health_card,
- t.PatientLastName,
- t.PatientFirstName,
- t.Birthdate  
-    FROM patient t
-     JOIN
-         (SELECT  DISTINCT 
-          p.Health_card,
-          p.PatientLastName,
-          p.PatientFirstName,
-          p.Birthdate
-         FROM patient p 
-         ) as t2
-   ON 
-      t.Health_card = t2.Health_card  AND
-      t.PatientLastName != t2.PatientLastName AND
-      t.PatientFirstName != t2.PatientFirstName
-      t.Birthdate != t2.Birthdate;
+        <div class="container-row">
+          <div>
+            <pre>
+            <b>JavaScript</b>
+          StorageModule.groupStatesUpdate = () => {  
+              const data = StorageModule.getData();
+              const newdata = data
+                              .map(group => {
+                                group.states = []
+                                return group
+                              })
+                              .map(group =>{                          
+                                    group.states = group.rows.map(row => row[1]);                          
+                                    return group;
+                              })
+                              .map(group =>{
+                                    group.stateAccept = ( group.states.includes('принят') ) ? 'Accept' : ''
+                                    return group;
+                              });
+              StorageModule.setData(newdata);
+          }
+          </pre
+            >
+          </div>
+          <div>
+            <pre>
+          <b>SQL Query For finding errors with health cards, when cards have two patients</b>
+          SELECT DISTINCT 
+          t.Health_card,
+          t.PatientLastName,
+          t.PatientFirstName,
+          t.Birthdate  
+          FROM patient t
+          JOIN
+              (SELECT  DISTINCT 
+              p.Health_card,
+              p.PatientLastName,
+              p.PatientFirstName,
+              p.Birthdate
+              FROM patient p 
+              ) as t2
+          ON 
+          t.Health_card = t2.Health_card  AND
+          t.PatientLastName != t2.PatientLastName AND
+          t.PatientFirstName != t2.PatientFirstName
+          t.Birthdate != t2.Birthdate;
 
-</pre>
+          </pre>
+          </div>
+        </div>
       </div>
-      <div class="projects-block">
+      <div class="projects-block" id="projects">
         <div><h3>Projects in Learning HTML Css</h3></div>
         <div class="container">
           <div class="project-pet">
@@ -485,10 +501,10 @@ StorageModule.groupStatesUpdate = () => {
           el: ".swiper-pagination",
         },
 
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
       });
 
       const swiperExperience = new Swiper(".swiper-experience", {
