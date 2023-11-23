@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
     <title>CV Aksana Bebesh</title>
   </head>
   <body>
-    <header class="wrapper">
+    <a href="#top"><div class="top-href">&#x2191;</div></a>
+    <header class="wrapper" id="top">
       <h1 class="hidden">This is a Heading</h1>
       <nav>
         <div class="contact-item">
@@ -29,7 +31,7 @@
           </a>
         </div>
         <div class="contact-item">
-          <a class="link" href="skype:live:kseniia_25?call">
+          <a class="link" href="skype:live:kseniia_25?chat">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 48 48"
@@ -143,16 +145,24 @@
               src="./images/github-logo.svg"
               alt="Git hub icon"
               width="48"
-            >
+            />
           </a>
         </div>
+        <nav id="main-menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work experience</a></li>
+            <li><a href="#code-example">Code Example</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
       </nav>
     </header>
     <main class="wrapper">
-
-      <div class="skills-block">
+      <div class="skills-block" id="skills">
         <div>
-          <img class="photo" src="./images/photo-cv.jpg" width="90" alt="" >
+          <img class="photo" src="./images/photo-cv.jpg" width="90" alt="" />
           <div><h2>Aksana Bebesh &#127799;</h2></div>
         </div>
         <div class="skills">
@@ -172,113 +182,115 @@
           </ul>
           <h3>Languages</h3>
           <ul>
-            <li>English B1 </li>
-            <li>Russian native </li>
+            <li>English B1</li>
+            <li>Russian native</li>
           </ul>
         </div>
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <img
                 src="./images/skills/html-5-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/mysql-logo-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/php3-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/symfony-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/node-js-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/postgresql-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/react-javascript-js-framework-facebook-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/sass-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/git-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/css-file-type-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/js-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="./images/skills/wordpress-svgrepo-com.svg"
                 alt=""
                 width="100"
-              >
+              />
             </div>
           </div>
-          <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
         </div>
       </div>
-      <div class="profile">
+      <div class="profile" id="about">
         <h3>Brief Profile</h3>
-<p>Full stack developer with 2.5 years of experience in building web applications based on web technologies: PHP(Symfony, Laravel), CMS (WordPress), MySQL(procedures, triggers), PostgreSQL,
-AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with Docker (docker compose), Git (Github), Jira.</p>
+        <p>
+          Full stack developer with 2.5 years of experience in building web
+          applications based on web technologies: PHP(Symfony, Laravel), CMS
+          (WordPress), MySQL(procedures, triggers), PostgreSQL, AWS SQS, HTML5,
+          CSS, JavaScript, React, NodeJS, Familiar with Docker (docker compose),
+          Git (Github), Jira.
+        </p>
       </div>
-      <div class="experience-block">
-        <h3>Project experience</h3>
+      <div class="experience-block" id="experience">
+        <h3>Work experience</h3>
         <div id="tabs">
           <div class="tab whiteborder">
             &#128137; Medical system for clinics
@@ -334,38 +346,116 @@ AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with Docker (docker com
           </div>
         </div>
       </div>
-      <div class="code-examples">
-<h3>Examples of code</h3>
-<pre>
-  <b>JavaScript</b>
-StorageModule.groupStatesUpdate = () => {  
-    const data = StorageModule.getData();
-    const newdata = data
-                    .map(group => {
-                       group.states = []
-                       return group
-                    })
-                    .map(group =>{                          
-                          group.states = group.rows.map(row => row[1]);                          
-                          return group;
-                    })
-                    .map(group =>{
-                          group.stateAccept = ( group.states.includes('принят') ) ? 'Accept' : ''
-                          return group;
-                    });
-    StorageModule.setData(newdata);
-}
-</pre>
-<pre>
-  <b>SQL Query For finding errors with helth cards, when cards have two patients</b>
-  SELECT DISTINCT  t.PHN,t.PatientLastName,t.PatientFirstName,t.Birthdate  
-    FROM tmp_migr.tblpatient t
-     JOIN
-    (SELECT  DISTINCT p.PHN AS pphn,p.PatientLastName AS pLN,p.PatientFirstName AS pFN,p.Birthdate AS pBRTH
-    FROM tmp_migr.tblpatient p 
-    ) as rrr 
-   ON t.PHN=rrr.pphn AND  t.PatientLastName!=rrr.pLN AND t.Birthdate!=rrr.pFN and  t.Birthdate!=rrr.pBRTH;
-</pre>
+      <div class="code-examples" id="code-example">
+        <h3>Examples of code</h3>
+        <div class="container-row">
+          <div>
+            <pre>
+            <b>JavaScript</b>
+          StorageModule.groupStatesUpdate = () => {  
+              const data = StorageModule.getData();
+              const newdata = data
+                              .map(group => {
+                                group.states = []
+                                return group
+                              })
+                              .map(group =>{                          
+                                    group.states = group.rows.map(row => row[1]);                          
+                                    return group;
+                              })
+                              .map(group =>{
+                                    group.stateAccept = ( group.states.includes('принят') ) ? 'Accept' : ''
+                                    return group;
+                              });
+              StorageModule.setData(newdata);
+          }
+          </pre
+            >
+          </div>
+          <div>
+            <pre>
+          <b>SQL Query For finding errors with health cards, when cards have two patients</b>
+          SELECT DISTINCT 
+          t.Health_card,
+          t.PatientLastName,
+          t.PatientFirstName,
+          t.Birthdate  
+          FROM patient t
+          JOIN
+              (SELECT  DISTINCT 
+              p.Health_card,
+              p.PatientLastName,
+              p.PatientFirstName,
+              p.Birthdate
+              FROM patient p 
+              ) as t2
+          ON 
+          t.Health_card = t2.Health_card  AND
+          t.PatientLastName != t2.PatientLastName AND
+          t.PatientFirstName != t2.PatientFirstName
+          t.Birthdate != t2.Birthdate;
+
+          </pre>
+          </div>
+        </div>
+      </div>
+      <div class="projects-block" id="projects">
+        <div><h3>Projects in Learning HTML Css</h3></div>
+        <div class="container">
+          <div class="project-pet">
+            <a
+              title="image-gallery"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/oksanabebesh-JSFEPRESCHOOL2023Q2/js-30-image-gallery/"
+            >
+              <img src="./images/img-projects/gallery.png" alt=""
+            /></a>
+          </div>
+          <div class="project-pet">
+            <a
+              title="memo-game"
+              target="_blank"
+              href="https://rolling-scopes-school.github.io/oksanabebesh-JSFEPRESCHOOL2023Q2/js30-memo-game/"
+            >
+              <img src="./images/img-projects/memo-game.png" alt=""
+            /></a>
+          </div>
+          <div class="project-pet">
+            <a
+              title="library"
+              target="_blank"
+              href="https://oksanabebesh.github.io/library2023/library/"
+              ><img src="./images/img-projects/library.png" alt=""
+            /></a>
+          </div>
+
+          <div class="project-pet">
+            <a
+              title="productly"
+              target="_blank"
+              href="https://oksanabebesh.github.io/LearningFridayLive/dist/"
+              ><img src="./images/img-projects/productly.png" alt=""
+            /></a>
+          </div>
+
+          <div class="project-pet">
+            <a
+              title="museum"
+              target="_blank"
+              href="https://oksanabebesh.github.io/css-projects-collections/JSFE2021Q3-museum/museum"
+              ><img src="./images/img-projects/museum.png" alt=""
+            /></a>
+          </div>
+
+          <div class="project-pet">
+            <a
+              title="museum"
+              target="_blank"
+              href="https://oksanabebesh.github.io/css-projects-collections/JSFE2021Q3-momentum/momentum/"
+              ><img src="./images/img-projects/momentum.png" alt=""
+            /></a>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="wrapper">
@@ -375,7 +465,7 @@ StorageModule.groupStatesUpdate = () => {
           src="./images/rs_school_js.svg"
           alt="logo RSSchool"
           width="66"
-        >
+        />
       </a>
       <a class="link" href="https://github.com/OksanaBebesh">
         <img
@@ -383,12 +473,11 @@ StorageModule.groupStatesUpdate = () => {
           src="./images/git_hub.jpg"
           alt="Git hub icon"
           width="36"
-        >
+        />
       </a>
       <a class="link" href="https://rs.school/js/"> The Rolling Scopes JS </a>
       <span>&copy;2023</span>
     </footer>
-    <!-- <script src="./js/swiper.js"></script> -->
     <script
       src="https://kit.fontawesome.com/2738d89d62.js"
       crossorigin="anonymous"
@@ -396,15 +485,12 @@ StorageModule.groupStatesUpdate = () => {
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    >
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    />
 
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
 
       const swiper = new Swiper(".swiper", {
-        // Optional parameters
         direction: "horizontal",
         loop: true,
         autoplay: {
@@ -412,35 +498,25 @@ StorageModule.groupStatesUpdate = () => {
         },
         slidesOffsetBefore: 100,
 
-        // If we need pagination
         pagination: {
           el: ".swiper-pagination",
         },
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // // And if we need scrollbar
-        // scrollbar: {
-        //   el: ".swiper-scrollbar",
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
         // },
       });
 
       const swiperExperience = new Swiper(".swiper-experience", {
-        // Optional parameters
         direction: "horizontal",
         loop: true,
         slidesOffsetBefore: 165,
 
-        // If we need pagination
         pagination: {
           el: ".swiper-pagination2",
         },
 
-        // Navigation arrows
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

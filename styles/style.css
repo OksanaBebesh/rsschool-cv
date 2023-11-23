@@ -1,9 +1,47 @@
 .wrapper {
   width: 100%;
-  border: 1px solid #3322;
+  /* border: 1px solid #3322; */
   border-radius: 5px;
   padding: 15px;
   min-width: 300px;
+}
+
+.top-href {
+  width: 55px;
+  height: 55px;
+  background-color: #c38154;
+  border-radius: 50px;
+  position: fixed;
+  right: 250px;
+  bottom: 500px;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+nav ul > li {
+  display: inline-block;
+  align-items: baseline;
+  list-style-type: none;
+  flex-direction: row;
+  margin-right: 30px;
+  align-self: center;
+  font-size: 21px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul > li > a:hover {
+  color: #c38154;
 }
 
 .hidden {
@@ -21,7 +59,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 50%;
+  width: 83%;
   margin: 0 auto;
 }
 
@@ -69,39 +107,66 @@ footer {
 
 .skills-block,
 .profile,
-.code-examples {
+.code-examples,
+.projects-block {
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 74%;
   border: 1px solid rgba(47, 53, 107, 0.116);
   margin: 0 auto;
   padding: 25px;
   border-radius: 15px;
-  background-color: #3322;
+  background-color: #b5b53222;
   box-shadow: 10px 5px 5px #3322;
   flex-wrap: wrap;
+}
+
+.project-pet img {
+  width: 339px;
 }
 
 .profile {
   margin-top: 20px;
 }
 
+.projects-block {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-block > .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-pet {
+  margin: 5px;
+  padding: 5px;
+}
+
 .experience-block {
   font-size: 15px;
-  width: 60%;
+  width: 74%;
   height: 450px;
   border: 1px solid rgba(47, 53, 107, 0.116);
-  background-color: #3322;
   box-shadow: 10px 5px 5px #3322;
+  background-color: #b5b53222;
   border-radius: 15px;
   margin: 20px auto;
   padding: 20px;
 }
 
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #tabs .tab {
   display: inline-block;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 15px;
   padding: 5px 10px;
   cursor: pointer;
   position: relative;
@@ -111,17 +176,20 @@ footer {
 #tabs .whiteborder {
   border: 1px solid #3322;
   border-radius: 3px 3px 0 0;
+  background-color: #c38154;
 }
 
 #tabs .tabContent {
-  width: 100%;
+  width: 98%;
   height: 50%;
   border: 1px solid #3322;
+  box-shadow: 10px 5px 5px #3322;
   position: relative;
   top: -1px;
   z-index: 1;
   padding: 10px;
   border-radius: 0 0 3px 3px;
+  line-height: 26px;
 }
 
 #tabs .hide {
@@ -130,4 +198,9 @@ footer {
 
 #tabs .show {
   display: block;
+}
+
+html {
+  user-select: none;
+  scroll-behavior: smooth;
 }
