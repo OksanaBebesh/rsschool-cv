@@ -180,9 +180,10 @@ footer {
 }
 
 #tabs .tabContent {
-  width: 100%;
+  width: 98%;
   height: 50%;
   border: 1px solid #3322;
+  box-shadow: 10px 5px 5px #3322;
   position: relative;
   top: -1px;
   z-index: 1;
