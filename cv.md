@@ -25,18 +25,36 @@ AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with Docker (docker com
 
 
 1) PHP Advanced
+   
 2) Symfony Intermediate
+ 
 3) MySQL Advanced
+ 
 4) JavaScript Advanced
+ 
 5) HTML Advanced
+ 
 6) CSS Advanced
+ 
 7) Git Advanced
+ 
 8) WordPress Advanced
+ 
 9) React Intermediate
+ 
 10) Node.js Basic
+ 
 11) AWS SQS Basic 
 
 <hr />
+
+## Projects
+
+<a href="https://rolling-scopes-school.github.io/oksanabebesh-JSFEPRESCHOOL2023Q2/js-30-image-gallery/">image-gallery</a>
+
+<a href="https://rolling-scopes-school.github.io/oksanabebesh-JSFEPRESCHOOL2023Q2/js30-media/">small-media</a>
+
+<a href="https://rolling-scopes-school.github.io/oksanabebesh-JSFEPRESCHOOL2023Q2/js30-memo-game/">memo-game</a>
 
 ## Examples of code  
 ```JavaScript
