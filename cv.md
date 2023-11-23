@@ -58,6 +58,7 @@ AWS SQS, HTML5, CSS, JavaScript, React, NodeJS, Familiar with Docker (docker com
 
 ## Examples of code  
 ```JavaScript
+
 StorageModule.groupStatesUpdate = () => {  
     const data = StorageModule.getData();
     const newdata = data
@@ -77,15 +78,27 @@ StorageModule.groupStatesUpdate = () => {
 }
 ```
 
-*SQL Query For finding errors with helth cards, when cards have two patients*<br/>
+*SQL Query For finding errors with health cards, when cards have two or more patients*<br/>
 <pre><code>
-  SELECT DISTINCT  t.PHN,t.PatientLastName,t.PatientFirstName,t.Birthdate  
-    FROM tmp_migr.tblpatient t
+  SELECT DISTINCT 
+ t.Health_card,
+ t.PatientLastName,
+ t.PatientFirstName,
+ t.Birthdate  
+    FROM patient t
      JOIN
-    (SELECT  DISTINCT p.PHN AS pphn,p.PatientLastName AS pLN,p.PatientFirstName AS pFN,p.Birthdate AS pBRTH
-    FROM tmp_migr.tblpatient p 
-    ) as rrr 
-   ON t.PHN=rrr.pphn AND  t.PatientLastName!=rrr.pLN AND t.Birthdate!=rrr.pFN and  t.Birthdate!=rrr.pBRTH;
+         (SELECT  DISTINCT 
+          p.Health_card,
+          p.PatientLastName,
+          p.PatientFirstName,
+          p.Birthdate
+         FROM patient p 
+         ) as t2
+   ON 
+      t.Health_card = t2.Health_card  AND
+      t.PatientLastName != t2.PatientLastName AND
+      t.PatientFirstName != t2.PatientFirstName
+      t.Birthdate != t2.Birthdate;
 </code></pre>
 
 <hr />
