@@ -34,35 +34,37 @@
           <div>
             <h2>Aksana Bebesh <span>&#127799;</span></h2>
             <div class="contact-item">
-              <a class="link" href="https://www.linkedin.com/in/oksana-bebesh1984/">
+              <a
+                class="link"
+                href="https://www.linkedin.com/in/oksana-bebesh1984/"
+              >
                 <div class="icon linkedin"></div>
                 <div>https://www.linkedin.com/in/oksana-bebesh1984/</div>
               </a>
-              
             </div>
             <div class="contact-item">
               <a class="link" href="skype:live:kseniia_25?chat">
                 <div class="icon skype"></div>
-                <div>live:kseniia_25</div> 
-              </a>                    
+                <div>live:kseniia_25</div>
+              </a>
             </div>
             <div class="contact-item">
               <a class="link" href="https://t.me/@oksanabebesh">
                 <div class="icon telegram"></div>
                 <div>@oksanabebesh</div>
-              </a>              
+              </a>
             </div>
             <div class="contact-item">
               <a class="link" href="mailto:oksana.bebesh1984@gmail.com">
                 <div class="icon gmail"></div>
                 <div>oksana.bebesh1984@gmail.com</div>
-              </a>              
+              </a>
             </div>
             <div class="contact-item">
               <a class="link" href="tel:+48&#8209;780&#8209;003&#8209;744">
                 <div class="icon phone"></div>
                 <div>+48&#8209;780&#8209;003&#8209;744</div>
-              </a>              
+              </a>
             </div>
             <div class="contact-item">
               <a class="link" href="https://github.com/OksanaBebesh">
@@ -71,9 +73,9 @@
                   src="./images/github-logo.svg"
                   alt="Git hub icon"
                   width="28"
-                >
+                />
                 <div>https://github.com/OksanaBebesh</div>
-              </a>              
+              </a>
             </div>
           </div>
         </div>
@@ -267,12 +269,12 @@
           StorageModule.groupStatesUpdate = () =&gt; {  
               const data = StorageModule.getData();
               const newdata = data
-                              .map(group => {
+                              .map(group =&gt; {
                                 group.states = []
                                 return group
                               })
                               .map(group =&gt;{                          
-                                    group.states = group.rows.map(row => row[1]);                          
+                                    group.states = group.rows.map(row =&gt; row[1]);                          
                                     return group;
                               })
                               .map(group =&gt;{
