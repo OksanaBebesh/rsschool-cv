@@ -13,7 +13,7 @@
   border-radius: 50px;
   position: fixed;
   right: 250px;
-  bottom: 500px;
+  bottom: 450px;
   display: flex;
   justify-content: center;
   font-size: 36px;
@@ -71,7 +71,14 @@ nav {
   border-radius: 50px;
 }
 
-main {
+.main-menu {
+  width: 74%;
+  border: 1px solid rgba(47, 53, 107, 0.116);
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #b5b53222;
+  box-shadow: 10px 5px 5px #3322;
 }
 
 body {
@@ -84,12 +91,16 @@ body {
 .contact-item {
   padding: 5px;
   margin: 5px;
+  font-size: 8px;
 }
 
 .link {
   text-decoration: none;
   color: rgba(2, 43, 83, 0.863);
   font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 
 footer {
@@ -203,4 +214,38 @@ footer {
 html {
   user-select: none;
   scroll-behavior: smooth;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.skype {
+  background-image: url("../images/contacts/skype.svg");
+}
+
+.linkedin {
+  background-image: url("../images/contacts/linkedin.svg");
+}
+
+.telegram {
+  background-image: url("../images/contacts/telegram.svg");
+}
+
+.gmail {
+  background-image: url("../images/contacts/gmail.svg");
+}
+
+.phone {
+  background-image: url("../images/contacts/phone.svg");
+}
+
+.contact-block {
+  width: 40%;
+}
+
+.git-hub {
+  margin-right: 10px;
 }
