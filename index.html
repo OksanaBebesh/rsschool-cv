@@ -10,7 +10,6 @@
     <a href="#top"><div id="btn-to-top" class="top-href">&#x2191;</div></a>
     <header class="wrapper" id="top">
       <h1 class="hidden">This is a Heading</h1>
-      <nav>
         <nav id="main-menu">
           <ul>
             <li><a href="#about">About</a></li>
@@ -20,7 +19,6 @@
             <li><a href="#projects">Projects</a></li>
           </ul>
         </nav>
-      </nav>
     </header>
     <main class="wrapper">
       <div class="skills-block" id="skills">
@@ -209,7 +207,7 @@
           <div class="tabContent">
             <pre>
   Medical system for clinics / Full stack PHP, ReactJS developer
-  <i>Technologies:</i>  <b>PHP, React, JavaScript, CSS, Slim, PostgreSQL, Vagrant, Jenkins, AWS SQS</b>
+  <i>Technologies:</i><b>PHP, React, JavaScript, CSS, Slim, PostgreSQL, Vagrant, Jenkins, AWS SQS</b>
   Responsibilities:
   • creating block with layout of elements, including filter
   • improving application’s API
@@ -255,7 +253,7 @@
         <h3>Examples of code</h3>
         <div class="container-row">
           <div>
-            <pre>
+            <code>
             <b>JavaScript</b>
           StorageModule.groupStatesUpdate = () =&gt; {  
               const data = StorageModule.getData();
@@ -264,21 +262,20 @@
                                 group.states = []
                                 return group
                               })
-                              .map(group =&gt;{                          
+                              .map(group =&gt; {                          
                                     group.states = group.rows.map(row =&gt; row[1]);                          
                                     return group;
                               })
-                              .map(group =&gt;{
+                              .map(group =&gt; {
                                     group.stateAccept = ( group.states.includes('принят') ) ? 'Accept' : ''
                                     return group;
                               });
               StorageModule.setData(newdata);
           }
-          </pre
-            >
+          </code>
           </div>
           <div>
-            <pre>
+            <code>
           <b>SQL Query For finding errors with health cards, when cards have two patients</b>
           SELECT DISTINCT 
           t.Health_card,
@@ -299,7 +296,7 @@
           t.PatientLastName != t2.PatientLastName AND
           t.PatientFirstName != t2.PatientFirstName
           t.Birthdate != t2.Birthdate;
-          </pre>
+            </code>
           </div>
         </div>
       </div>
@@ -399,7 +396,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     >
-
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
 
@@ -415,7 +411,6 @@
           el: ".swiper-pagination",
         },
       });
-
       const swiperExperience = new Swiper(".swiper-experience", {
         direction: "horizontal",
         loop: true,
