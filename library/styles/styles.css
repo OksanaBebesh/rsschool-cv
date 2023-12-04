@@ -1,0 +1,619 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-width: 1440px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-self: baseline;
+  padding: 11px 0px 11px 24px;
+  background-color: #0c0c0e;
+  min-height: 90px;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: Forum;
+  color: #0c0c0e;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+footer {
+  min-height: 250px;
+  max-height: 250px;
+  padding: 20px 20px 0;
+  color: #ffffff;
+  background-color: #0c0c0e;
+}
+
+header h3 {
+  font-weight: 100;
+  background-color: #0c0c0e;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+
+nav ul > li {
+  display: inline-block;
+  align-items: baseline;
+  list-style-type: none;
+  flex-direction: row;
+  margin-right: 30px;
+  align-self: center;
+  font-size: 21px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ul > li > a:hover {
+  color: #c38154;
+}
+
+.profile-icon {
+  width: 31px;
+  height: 31px;
+  background-image: url("../images/icon_profile.png");
+  background-repeat: no-repeat;
+}
+
+.profile-icon:hover {
+  background-image: url("../images/icon_profile_hover.png");
+  background-repeat: no-repeat;
+}
+
+.hero {
+  width: 100%;
+  min-height: 600px;
+  background-image: url("../images/Welcome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  margin-top: -23px;
+}
+
+.hero h1 {
+  font-family: "Forum";
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.hero-welcome {
+  width: 600px;
+  height: 220px;
+  background-color: #0c0c0e;
+  justify-content: center;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.about .line-description h2 {
+  margin-block-start: 0.53em;
+}
+
+.line-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-description h3 {
+  margin-block-start: 2.5em;
+  font-size: 19px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+section {
+  margin: 0;
+}
+
+.gallery-about {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-about img {
+  padding: 11px;
+}
+
+.gallery-about.slide-3,
+.gallery-about.slide-2 {
+  opacity: 0;
+  display: none;
+}
+
+.line-description .separator {
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+  margin-top: -16px;
+}
+
+.item {
+  width: 27px;
+  height: 27px;
+  color: #0c0c0e;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+.favorites .line-description h2 {
+  margin-block-start: 1.83em;
+}
+
+.favorites .seasons-header {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-block-start: 2em;
+}
+
+.favorites {
+  width: 96%;
+  /* margin: 0 auto; */
+}
+
+.active {
+  color: #bb945f;
+}
+
+.seasons {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  margin-block-start: 1em;
+  padding-inline-start: 18px;
+}
+
+.seasons li {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 90px;
+  cursor: pointer;
+}
+
+.seasons input[type="radio" i] {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.seasons input[type="radio"] {
+  border: 1px solid #0000;
+  width: 17px;
+  height: 17px;
+  margin: 8px 6px -9px 3px;
+}
+
+.seasons input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+.favorites-books-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.book-block {
+  min-width: 550px;
+  min-height: 550px;
+  max-width: 550px;
+  max-height: 550px;
+  position: relative;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.book-block button {
+  padding: 7px 25px;
+  position: absolute;
+  bottom: 7px;
+  left: 38px;
+}
+
+.book-description {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  max-width: 355px;
+  min-width: 355px;
+}
+
+.book-photo {
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  right: -39px;
+}
+
+.menu-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desserts-block h2,
+.drinks-block h2 {
+  color: #bb945f;
+  font-family: "Forum";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  /* margin-block-start: 1em;
+  margin-block-end: 1.1em; */
+}
+
+.desserts-block {
+  text-align: right;
+}
+
+.menu-item > .separator {
+  width: 100px;
+  height: 1px;
+  background: #bb945f;
+}
+
+div.menu-item {
+  width: 250px;
+}
+
+.desserts-block > div.menu-item {
+  text-align: right;
+}
+
+.coffe-shop p {
+  color: #000;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.coffee-description {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-block-start: 2em;
+}
+
+.coffee-shop {
+  width: 97%;
+  margin: 10px auto;
+}
+
+.menu {
+  list-style-type: none;
+  padding-inline-start: 0;
+  width: 438px;
+}
+
+.menu-item {
+  color: #000;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-items h6 {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-block-start: 0.33em;
+}
+
+.our-contacts {
+  /* width: 80%; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.our-contacts .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-contacts .line-description {
+  margin-bottom: 40px;
+}
+
+.our-contacts .line-description h2 {
+  margin-block-start: 0em;
+}
+
+.card-find-form {
+  padding: 21px;
+}
+
+.card-find-form h3 {
+  letter-spacing: 2.3px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.form-container p {
+  color: #000;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
+}
+
+.digital-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* width: 80%; */
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+
+.digital-cards .line-description {
+  display: flex;
+  justify-content: center;
+}
+
+.digital-cards .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-form {
+  border: 3px solid #bb945f;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  width: 560px;
+  height: 272px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #bb945f;
+  margin-bottom: 20px;
+}
+
+.form-container p {
+  margin-block-end: 0em;
+  margin-block-start: 0.5em;
+}
+
+.form-container input[type="text"] {
+  width: 520px;
+  padding: 8px 8px 8px 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: #8e8e8e;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  margin-bottom: 25px;
+  border: 1px solid #bb945f;
+}
+
+.find-form button {
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  padding: 10px 40px;
+  width: 242px;
+  height: 44px;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.form-container input[type="text"]:first-child {
+}
+
+.register-card-block p {
+  width: 456px;
+  height: 120px;
+  color: #000;
+  text-align: right;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+}
+
+.register-card-block {
+  text-align: right;
+}
+
+.register-card-block h5 {
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-block-end: 28px;
+}
+
+.btn-lines button {
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
+
+.btn-lines button:last-child {
+  margin-left: 20px;
+}
+
+.btn-lines {
+  padding: 20px 20px;
+}
+
+footer .separator {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 14px 0 46px;
+}
+
+.footer-social-nav li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.social-block {
+  line-height: 10px;
+}
+
+.work-time {
+  line-height: 0px;
+}
+
+.footer-social-nav {
+  margin-right: 15px;
+  padding-inline-start: 0;
+}
+
+.social-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.facebook {
+  background-image: url("../images/u_facebook-f.png");
+  color: red;
+}
+
+.instagram {
+  background-image: url("../images/u_instagram.png");
+}
+
+.twitter {
+  background-image: url("../images/u_twitter-alt.png");
+}
+
+.facebook:hover {
+  background-image: url("../images/u_facebook-f_hover.png");
+  color: red;
+}
+
+.instagram:hover {
+  background-image: url("../images/u_instagram_hover.png");
+}
+
+.twitter:hover {
+  background-image: url("../images/u_twitter-alt_hover.png");
+}
+
+.adress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.href-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.href-line a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-social-nav {
+  display: flex;
+  list-style-type: none;
+}
