@@ -255,15 +255,15 @@
           <div>
             <code>
             <b>JavaScript</b>
-          StorageModule.groupStatesUpdate = () =&gt; {  
+          StorageModule.groupStatesUpdate = () =&gt; {
               const data = StorageModule.getData();
               const newdata = data
                               .map(group =&gt; {
                                 group.states = []
                                 return group
                               })
-                              .map(group =&gt; {                          
-                                    group.states = group.rows.map(row =&gt; row[1]);                          
+                              .map(group =&gt; {
+                                  group.states = group.rows.map(row =&gt; row[1]);
                                     return group;
                               })
                               .map(group =&gt; {
@@ -277,21 +277,21 @@
           <div>
             <code>
           <b>SQL Query For finding errors with health cards, when cards have two patients</b>
-          SELECT DISTINCT 
+          SELECT DISTINCT
           t.Health_card,
           t.PatientLastName,
           t.PatientFirstName,
-          t.Birthdate  
+          t.Birthdate
           FROM patient t
           JOIN
-              (SELECT  DISTINCT 
+              (SELECT  DISTINCT
               p.Health_card,
               p.PatientLastName,
               p.PatientFirstName,
               p.Birthdate
-              FROM patient p 
+              FROM patient p
               ) as t2
-          ON 
+          ON
           t.Health_card = t2.Health_card  AND
           t.PatientLastName != t2.PatientLastName AND
           t.PatientFirstName != t2.PatientFirstName
@@ -385,7 +385,7 @@
           width="36"
         >
       </a>
-      <a class="link" href="https://rs.school/js/"> The Rolling Scopes JS </a>
+      <a class="link" href="https://rs.school/js/">The Rolling Scopes JS</a>
       <span>&copy;2023</span>
     </footer>
     <script
@@ -411,6 +411,7 @@
           el: ".swiper-pagination",
         },
       });
+      
       const swiperExperience = new Swiper(".swiper-experience", {
         direction: "horizontal",
         loop: true,
