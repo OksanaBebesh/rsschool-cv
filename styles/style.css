@@ -59,8 +59,14 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 83%;
+  width: 74%;
   margin: 0 auto;
+  border: 1px solid rgba(47, 53, 107, 0.116);
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #b5b53222;
+  box-shadow: 10px 5px 5px #3322;
 }
 
 .skills {
